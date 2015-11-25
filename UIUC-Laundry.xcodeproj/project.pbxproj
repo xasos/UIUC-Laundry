@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB912FF71C06737F00E44FF7 /* AppDelegate.swift */; };
-		EB912FFA1C06737F00E44FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB912FF91C06737F00E44FF7 /* ViewController.swift */; };
 		EB912FFD1C06737F00E44FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFB1C06737F00E44FF7 /* Main.storyboard */; };
 		EB912FFF1C06737F00E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFE1C06737F00E44FF7 /* Assets.xcassets */; };
 		EB9130021C06737F00E44FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,9 @@
 		EB9130231C06738000E44FF7 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130221C06738000E44FF7 /* GlanceController.swift */; };
 		EB9130251C06738000E44FF7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130241C06738000E44FF7 /* ComplicationController.swift */; };
 		EB9130271C06738000E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9130261C06738000E44FF7 /* Assets.xcassets */; };
+		EB9130371C0679DD00E44FF7 /* LaundryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130361C0679DD00E44FF7 /* LaundryInformation.swift */; };
+		EB9130391C067B0600E44FF7 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130381C067B0500E44FF7 /* TimerViewController.swift */; };
+		EB91303B1C067B2B00E44FF7 /* MachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91303A1C067B2B00E44FF7 /* MachineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +71,6 @@
 /* Begin PBXFileReference section */
 		EB912FF41C06737F00E44FF7 /* UIUC-Laundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIUC-Laundry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB912FF71C06737F00E44FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB912FF91C06737F00E44FF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB912FFC1C06737F00E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB912FFE1C06737F00E44FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9130011C06737F00E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +88,9 @@
 		EB9130241C06738000E44FF7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		EB9130261C06738000E44FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9130281C06738000E44FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9130361C0679DD00E44FF7 /* LaundryInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaundryInformation.swift; sourceTree = "<group>"; };
+		EB9130381C067B0500E44FF7 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		EB91303A1C067B2B00E44FF7 /* MachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				EB912FF71C06737F00E44FF7 /* AppDelegate.swift */,
-				EB912FF91C06737F00E44FF7 /* ViewController.swift */,
+				EB9130361C0679DD00E44FF7 /* LaundryInformation.swift */,
+				EB9130381C067B0500E44FF7 /* TimerViewController.swift */,
+				EB91303A1C067B2B00E44FF7 /* MachineViewController.swift */,
 				EB912FFB1C06737F00E44FF7 /* Main.storyboard */,
 				EB912FFE1C06737F00E44FF7 /* Assets.xcassets */,
 				EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */,
@@ -305,8 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB912FFA1C06737F00E44FF7 /* ViewController.swift in Sources */,
+				EB9130391C067B0600E44FF7 /* TimerViewController.swift in Sources */,
+				EB91303B1C067B2B00E44FF7 /* MachineViewController.swift in Sources */,
 				EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */,
+				EB9130371C0679DD00E44FF7 /* LaundryInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
