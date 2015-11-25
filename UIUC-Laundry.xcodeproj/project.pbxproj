@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB912FF71C06737F00E44FF7 /* AppDelegate.swift */; };
+		EB912FFA1C06737F00E44FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB912FF91C06737F00E44FF7 /* ViewController.swift */; };
+		EB912FFD1C06737F00E44FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFB1C06737F00E44FF7 /* Main.storyboard */; };
+		EB912FFF1C06737F00E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFE1C06737F00E44FF7 /* Assets.xcassets */; };
+		EB9130021C06737F00E44FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */; };
+		EB9130071C06738000E44FF7 /* UIUC-Laundry WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB9130061C06738000E44FF7 /* UIUC-Laundry WatchKit App.app */; };
+		EB91300D1C06738000E44FF7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB91300B1C06738000E44FF7 /* Interface.storyboard */; };
+		EB91300F1C06738000E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB91300E1C06738000E44FF7 /* Assets.xcassets */; };
+		EB9130161C06738000E44FF7 /* UIUC-Laundry WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB9130151C06738000E44FF7 /* UIUC-Laundry WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB91301D1C06738000E44FF7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91301C1C06738000E44FF7 /* InterfaceController.swift */; };
+		EB91301F1C06738000E44FF7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91301E1C06738000E44FF7 /* ExtensionDelegate.swift */; };
+		EB9130211C06738000E44FF7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130201C06738000E44FF7 /* NotificationController.swift */; };
+		EB9130231C06738000E44FF7 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130221C06738000E44FF7 /* GlanceController.swift */; };
+		EB9130251C06738000E44FF7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130241C06738000E44FF7 /* ComplicationController.swift */; };
+		EB9130271C06738000E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9130261C06738000E44FF7 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB9130081C06738000E44FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB912FEC1C06737F00E44FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9130051C06738000E44FF7;
+			remoteInfo = "UIUC-Laundry WatchKit App";
+		};
+		EB9130171C06738000E44FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB912FEC1C06737F00E44FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9130141C06738000E44FF7;
+			remoteInfo = "UIUC-Laundry WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB91302E1C06738000E44FF7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB9130161C06738000E44FF7 /* UIUC-Laundry WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9130321C06738000E44FF7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB9130071C06738000E44FF7 /* UIUC-Laundry WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB912FF41C06737F00E44FF7 /* UIUC-Laundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIUC-Laundry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB912FF71C06737F00E44FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB912FF91C06737F00E44FF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB912FFC1C06737F00E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB912FFE1C06737F00E44FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9130011C06737F00E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB9130031C06737F00E44FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9130061C06738000E44FF7 /* UIUC-Laundry WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIUC-Laundry WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB91300C1C06738000E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EB91300E1C06738000E44FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9130101C06738000E44FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9130151C06738000E44FF7 /* UIUC-Laundry WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UIUC-Laundry WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB91301B1C06738000E44FF7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EB91301C1C06738000E44FF7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EB91301E1C06738000E44FF7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EB9130201C06738000E44FF7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EB9130221C06738000E44FF7 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		EB9130241C06738000E44FF7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EB9130261C06738000E44FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9130281C06738000E44FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB912FF11C06737F00E44FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9130121C06738000E44FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB912FEB1C06737F00E44FF7 = {
+			isa = PBXGroup;
+			children = (
+				EB912FF61C06737F00E44FF7 /* UIUC-Laundry */,
+				EB91300A1C06738000E44FF7 /* UIUC-Laundry WatchKit App */,
+				EB9130191C06738000E44FF7 /* UIUC-Laundry WatchKit Extension */,
+				EB912FF51C06737F00E44FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB912FF51C06737F00E44FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB912FF41C06737F00E44FF7 /* UIUC-Laundry.app */,
+				EB9130061C06738000E44FF7 /* UIUC-Laundry WatchKit App.app */,
+				EB9130151C06738000E44FF7 /* UIUC-Laundry WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB912FF61C06737F00E44FF7 /* UIUC-Laundry */ = {
+			isa = PBXGroup;
+			children = (
+				EB912FF71C06737F00E44FF7 /* AppDelegate.swift */,
+				EB912FF91C06737F00E44FF7 /* ViewController.swift */,
+				EB912FFB1C06737F00E44FF7 /* Main.storyboard */,
+				EB912FFE1C06737F00E44FF7 /* Assets.xcassets */,
+				EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */,
+				EB9130031C06737F00E44FF7 /* Info.plist */,
+			);
+			path = "UIUC-Laundry";
+			sourceTree = "<group>";
+		};
+		EB91300A1C06738000E44FF7 /* UIUC-Laundry WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EB91300B1C06738000E44FF7 /* Interface.storyboard */,
+				EB91300E1C06738000E44FF7 /* Assets.xcassets */,
+				EB9130101C06738000E44FF7 /* Info.plist */,
+			);
+			path = "UIUC-Laundry WatchKit App";
+			sourceTree = "<group>";
+		};
+		EB9130191C06738000E44FF7 /* UIUC-Laundry WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB91301C1C06738000E44FF7 /* InterfaceController.swift */,
+				EB91301E1C06738000E44FF7 /* ExtensionDelegate.swift */,
+				EB9130201C06738000E44FF7 /* NotificationController.swift */,
+				EB9130221C06738000E44FF7 /* GlanceController.swift */,
+				EB9130241C06738000E44FF7 /* ComplicationController.swift */,
+				EB9130261C06738000E44FF7 /* Assets.xcassets */,
+				EB9130281C06738000E44FF7 /* Info.plist */,
+				EB91301A1C06738000E44FF7 /* Supporting Files */,
+			);
+			path = "UIUC-Laundry WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EB91301A1C06738000E44FF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB91301B1C06738000E44FF7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB912FF31C06737F00E44FF7 /* UIUC-Laundry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9130331C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry" */;
+			buildPhases = (
+				EB912FF01C06737F00E44FF7 /* Sources */,
+				EB912FF11C06737F00E44FF7 /* Frameworks */,
+				EB912FF21C06737F00E44FF7 /* Resources */,
+				EB9130321C06738000E44FF7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9130091C06738000E44FF7 /* PBXTargetDependency */,
+			);
+			name = "UIUC-Laundry";
+			productName = "UIUC-Laundry";
+			productReference = EB912FF41C06737F00E44FF7 /* UIUC-Laundry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB9130051C06738000E44FF7 /* UIUC-Laundry WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB91302F1C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry WatchKit App" */;
+			buildPhases = (
+				EB9130041C06738000E44FF7 /* Resources */,
+				EB91302E1C06738000E44FF7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9130181C06738000E44FF7 /* PBXTargetDependency */,
+			);
+			name = "UIUC-Laundry WatchKit App";
+			productName = "UIUC-Laundry WatchKit App";
+			productReference = EB9130061C06738000E44FF7 /* UIUC-Laundry WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EB9130141C06738000E44FF7 /* UIUC-Laundry WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB91302B1C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry WatchKit Extension" */;
+			buildPhases = (
+				EB9130111C06738000E44FF7 /* Sources */,
+				EB9130121C06738000E44FF7 /* Frameworks */,
+				EB9130131C06738000E44FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIUC-Laundry WatchKit Extension";
+			productName = "UIUC-Laundry WatchKit Extension";
+			productReference = EB9130151C06738000E44FF7 /* UIUC-Laundry WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB912FEC1C06737F00E44FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Niraj Pant";
+				TargetAttributes = {
+					EB912FF31C06737F00E44FF7 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EB9130051C06738000E44FF7 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EB9130141C06738000E44FF7 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = EB912FEF1C06737F00E44FF7 /* Build configuration list for PBXProject "UIUC-Laundry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB912FEB1C06737F00E44FF7;
+			productRefGroup = EB912FF51C06737F00E44FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB912FF31C06737F00E44FF7 /* UIUC-Laundry */,
+				EB9130051C06738000E44FF7 /* UIUC-Laundry WatchKit App */,
+				EB9130141C06738000E44FF7 /* UIUC-Laundry WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB912FF21C06737F00E44FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9130021C06737F00E44FF7 /* LaunchScreen.storyboard in Resources */,
+				EB912FFF1C06737F00E44FF7 /* Assets.xcassets in Resources */,
+				EB912FFD1C06737F00E44FF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9130041C06738000E44FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB91300F1C06738000E44FF7 /* Assets.xcassets in Resources */,
+				EB91300D1C06738000E44FF7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9130131C06738000E44FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9130271C06738000E44FF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB912FF01C06737F00E44FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB912FFA1C06737F00E44FF7 /* ViewController.swift in Sources */,
+				EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9130111C06738000E44FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9130211C06738000E44FF7 /* NotificationController.swift in Sources */,
+				EB91301F1C06738000E44FF7 /* ExtensionDelegate.swift in Sources */,
+				EB9130251C06738000E44FF7 /* ComplicationController.swift in Sources */,
+				EB91301D1C06738000E44FF7 /* InterfaceController.swift in Sources */,
+				EB9130231C06738000E44FF7 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB9130091C06738000E44FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB9130051C06738000E44FF7 /* UIUC-Laundry WatchKit App */;
+			targetProxy = EB9130081C06738000E44FF7 /* PBXContainerItemProxy */;
+		};
+		EB9130181C06738000E44FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB9130141C06738000E44FF7 /* UIUC-Laundry WatchKit Extension */;
+			targetProxy = EB9130171C06738000E44FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB912FFB1C06737F00E44FF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB912FFC1C06737F00E44FF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9130011C06737F00E44FF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB91300B1C06738000E44FF7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB91300C1C06738000E44FF7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9130291C06738000E44FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB91302A1C06738000E44FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB91302C1C06738000E44FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "UIUC-Laundry WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.niraj.UIUC-Laundry.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EB91302D1C06738000E44FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "UIUC-Laundry WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.niraj.UIUC-Laundry.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		EB9130301C06738000E44FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = UIUC_Laundry_WatchKit_Extension;
+				INFOPLIST_FILE = "UIUC-Laundry WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.niraj.UIUC-Laundry.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EB9130311C06738000E44FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = UIUC_Laundry_WatchKit_Extension;
+				INFOPLIST_FILE = "UIUC-Laundry WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.niraj.UIUC-Laundry.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		EB9130341C06738000E44FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UIUC-Laundry/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.niraj.UIUC-Laundry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB9130351C06738000E44FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UIUC-Laundry/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.niraj.UIUC-Laundry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB912FEF1C06737F00E44FF7 /* Build configuration list for PBXProject "UIUC-Laundry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9130291C06738000E44FF7 /* Debug */,
+				EB91302A1C06738000E44FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB91302B1C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB91302C1C06738000E44FF7 /* Debug */,
+				EB91302D1C06738000E44FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB91302F1C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9130301C06738000E44FF7 /* Debug */,
+				EB9130311C06738000E44FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB9130331C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9130341C06738000E44FF7 /* Debug */,
+				EB9130351C06738000E44FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB912FEC1C06737F00E44FF7 /* Project object */;
+}
