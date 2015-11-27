@@ -7,8 +7,9 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
 
     @IBOutlet weak var tableView: UITableView!
     
-    var laundryRoomCount : Int = 0
-    var laundryInfo : SwiftyJSON.JSON = []
+    var laundryInfo : SwiftyJSON.JSON = [] {
+        didSet { tableView.reloadData() }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,6 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
                 if let value = response.result.value {
                     let json = JSON(value)
                     self.laundryInfo = json
-                    self.laundryRoomCount = json["location"]["rooms"].count
                 }
             case .Failure(let error):
                 print(error)
@@ -36,7 +36,7 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30 // Replace with laundry room count
+        return laundryInfo?.count ?? 30
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
