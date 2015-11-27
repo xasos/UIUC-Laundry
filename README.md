@@ -8,26 +8,27 @@ For bugs or features requests, please [submit an issue](https://github.com/xasos
 ## Setup
 If you don't already have [CocoaPods](http://cocoapods.org/), install it.
 
-    gem install cocoapods
-    pod setup
+      gem install cocoapods
+      pod setup
 
 Clone this repository.
 
-    git clone https://github.com/xasos/UIUC-Laundry
+      git clone https://github.com/xasos/UIUC-Laundry
 
 Install it's dependencies
 
-    cd UIUC-Laundry
-    pod install
+      cd UIUC-Laundry
+      pod install
 
 Open the workspace (not the project)
 
-    open UIUC-Laundry.xcworkspace
+      open UIUC-Laundry.xcworkspace
+
 Run the project
 
-    Select 'UIUC-Laundry' target
-      Select 'Debug' build scheme
-    Run
+      Select 'UIUC-Laundry' target
+        Select 'Debug' build scheme
+      Run
 
 ## Download 
 The app can be downloaded directly from the [App Store <i>soon</i>](http://appstore.com) or built from source.
