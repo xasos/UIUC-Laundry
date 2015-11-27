@@ -3,13 +3,13 @@ UIUC Laundry
 
 Application to view the status of laundry machines at UIUC. Companion app for Apple Watch coming soon.
 
-For bugs or features requests, please [submit an issue](https://github.com/xasos/UIUC-Laundry/issues/new)
+For bugs or features requests, please [submit an issue](https://github.com/xasos/UIUC-Laundry/issues/new).
 
 ## Setup
 If you don't already have [CocoaPods](http://cocoapods.org/), install it.
 
-        gem install cocoapods
-        pod setup
+    gem install cocoapods
+    pod setup
 
 Clone this repository.
 
