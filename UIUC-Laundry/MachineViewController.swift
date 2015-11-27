@@ -49,11 +49,13 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
         var laundryMachineCount : Int = 0
         var dryerCount : Int = 0
         for i in 1...laundryInfo["location"]["rooms"][indexPath.row]["machines"].count {
-            if (laundryInfo["location"]["rooms"][indexPath.row]["machines"][i]["status"]) == "Available" {
-//                if () {
-//                    
-//                }
-//                elsif() {
+            if (laundryInfo["location"]["rooms"][indexPath.row]["machines"][i]["status"].stringValue) == "Available" {
+                if laundryInfo["location"]["rooms"][indexPath.row]["machines"][i]["status"].stringValue.lowercaseString.rangeOfString("available") != nil {
+                    laundryMachineCount++
+                }
+                else {
+                    dryerCount++
+                }
             }
          }
         
