@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5B4762DA5B79CE1E3FCC80 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D645AC1A4D18F8B77BAB9A /* Pods.framework */; };
 		EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB912FF71C06737F00E44FF7 /* AppDelegate.swift */; };
 		EB912FFD1C06737F00E44FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFB1C06737F00E44FF7 /* Main.storyboard */; };
 		EB912FFF1C06737F00E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFE1C06737F00E44FF7 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		EB9130371C0679DD00E44FF7 /* LaundryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130361C0679DD00E44FF7 /* LaundryInformation.swift */; };
 		EB9130391C067B0600E44FF7 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9130381C067B0500E44FF7 /* TimerViewController.swift */; };
 		EB91303B1C067B2B00E44FF7 /* MachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91303A1C067B2B00E44FF7 /* MachineViewController.swift */; };
+		EB9A84B01C0687D700620748 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A84AF1C0687D700620748 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7D1D47927761E59C7AA36C37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		97D645AC1A4D18F8B77BAB9A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A57DE79A9A33EE7F188589 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EB912FF41C06737F00E44FF7 /* UIUC-Laundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIUC-Laundry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB912FF71C06737F00E44FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB912FFC1C06737F00E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		EB9130361C0679DD00E44FF7 /* LaundryInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaundryInformation.swift; sourceTree = "<group>"; };
 		EB9130381C067B0500E44FF7 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		EB91303A1C067B2B00E44FF7 /* MachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineViewController.swift; sourceTree = "<group>"; };
+		EB9A84AF1C0687D700620748 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5B4762DA5B79CE1E3FCC80 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56A1BA16A88B8419D0EAE29D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D47927761E59C7AA36C37 /* Pods.debug.xcconfig */,
+				B0A57DE79A9A33EE7F188589 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0B5F82F62172337D8E2C4A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97D645AC1A4D18F8B77BAB9A /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB912FEB1C06737F00E44FF7 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +142,8 @@
 				EB91300A1C06738000E44FF7 /* UIUC-Laundry WatchKit App */,
 				EB9130191C06738000E44FF7 /* UIUC-Laundry WatchKit Extension */,
 				EB912FF51C06737F00E44FF7 /* Products */,
+				56A1BA16A88B8419D0EAE29D /* Pods */,
+				A0B5F82F62172337D8E2C4A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +168,7 @@
 				EB912FFE1C06737F00E44FF7 /* Assets.xcassets */,
 				EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */,
 				EB9130031C06737F00E44FF7 /* Info.plist */,
+				EB9A84AF1C0687D700620748 /* Timer.swift */,
 			);
 			path = "UIUC-Laundry";
 			sourceTree = "<group>";
@@ -186,10 +213,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB9130331C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry" */;
 			buildPhases = (
+				96F048FEC62C295F30C8CCDC /* Check Pods Manifest.lock */,
 				EB912FF01C06737F00E44FF7 /* Sources */,
 				EB912FF11C06737F00E44FF7 /* Frameworks */,
 				EB912FF21C06737F00E44FF7 /* Resources */,
 				EB9130321C06738000E44FF7 /* Embed Watch Content */,
+				8BCABAD420FC0088CFA656D4 /* Embed Pods Frameworks */,
+				80B7C7C4CDAB77F318BD732A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +336,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80B7C7C4CDAB77F318BD732A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCABAD420FC0088CFA656D4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96F048FEC62C295F30C8CCDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB912FF01C06737F00E44FF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -314,6 +392,7 @@
 				EB9130391C067B0600E44FF7 /* TimerViewController.swift in Sources */,
 				EB91303B1C067B2B00E44FF7 /* MachineViewController.swift in Sources */,
 				EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */,
+				EB9A84B01C0687D700620748 /* Timer.swift in Sources */,
 				EB9130371C0679DD00E44FF7 /* LaundryInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +597,7 @@
 		};
 		EB9130341C06738000E44FF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1D47927761E59C7AA36C37 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIUC-Laundry/Info.plist";
@@ -529,6 +609,7 @@
 		};
 		EB9130351C06738000E44FF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A57DE79A9A33EE7F188589 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIUC-Laundry/Info.plist";
@@ -557,6 +638,7 @@
 				EB91302D1C06738000E44FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB91302F1C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +647,7 @@
 				EB9130311C06738000E44FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB9130331C06738000E44FF7 /* Build configuration list for PBXNativeTarget "UIUC-Laundry" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +656,7 @@
 				EB9130351C06738000E44FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

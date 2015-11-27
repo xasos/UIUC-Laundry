@@ -8,7 +8,14 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="UIUC_Laundry_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="UIUC_Laundry_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <timer alignment="left" previewedSeconds="1000" id="QAf-pS-0eI">
+                            <calendarUnit key="units" minute="YES"/>
+                        </timer>
+                        <label alignment="left" text="m Remaining for {Dryer 1}" id="Wvg-KL-L8k"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
