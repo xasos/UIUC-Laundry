@@ -1,6 +1,10 @@
 UIUC Laundry
 ========
 
+Application to view the status of laundry machines at UIUC. Companion app for Apple Watch coming soon.
+
+For bugs or features requests, please [submit an issue](https://github.com/xasos/UIUC-Laundry/issues/new)
+
 ## Setup
 If you don't already have [CocoaPods](http://cocoapods.org/), install it.
 
@@ -9,19 +13,19 @@ If you don't already have [CocoaPods](http://cocoapods.org/), install it.
 
 Clone this repository.
 
-    git clone https://github.com/xasos/WuNameMe-iOS
+    git clone https://github.com/xasos/UIUC-Laundry
 
 Install it's dependencies
 
-    cd WuNameMe-iOS
+    cd UIUC-Laundry
     pod install
 
 Open the workspace (not the project)
 
-    open WuNameMe.xcworkspace
+    open UIUC-Laundry.xcworkspace
 Run the project
 
-    Select 'WuNameMe' target
+    Select 'UIUC-Laundry' target
       Select 'Debug' build scheme
     Run
 
