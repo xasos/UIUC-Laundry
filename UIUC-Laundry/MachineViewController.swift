@@ -7,9 +7,8 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
 
     @IBOutlet weak var tableView: UITableView!
     
-    var textArray : NSMutableArray = NSMutableArray()
-    
     var laundryRoomCount : Int = 0
+    var laundryInfo : SwiftyJSON.JSON = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +19,12 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
-//                    
-                    print("JSON: \(json)")
-                    
+                    self.laundryInfo = json
                     self.laundryRoomCount = json["location"]["rooms"].count
-                    print(json["location"]["count"][0])
                 }
             case .Failure(let error):
                 print(error)
             }
-        }
-        
-        for _ in 1...30 {
-            self.textArray.addObject("")
         }
         
         self.tableView.rowHeight = 105.0
@@ -49,9 +41,27 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: MachineTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as! MachineTableViewCell
-        cell.buildingNameLabel?.text = "lol"
-        cell.washingMachineLabel?.text = "nah"
-        cell.dryerLabel?.text = "pls"
+//        cell.buildingNameLabel?.text = "lol"
+        cell.buildingNameLabel?.text = laundryInfo["location"]["rooms"][indexPath.row]["name"].stringValue
+//        cell.washingMachineLabel?.text = "nah"
+        
+        // run a function that for loops and counts
+        var laundryMachineCount : Int = 0
+        var dryerCount : Int = 0
+        for i in 1...laundryInfo["location"]["rooms"][indexPath.row]["machines"].count {
+            if (laundryInfo["location"]["rooms"][indexPath.row]["machines"][i]["status"]) == "Available" {
+//                if () {
+//                    
+//                }
+//                elsif() {
+            }
+         }
+        
+
+        
+        cell.washingMachineLabel?.text = String(laundryMachineCount)
+//        cell.dryerLabel?.text = "pls"
+        cell.dryerLabel?.text = laundryInfo["location"]["rooms"][indexPath.row]["name"].stringValue
         
         return cell
     }

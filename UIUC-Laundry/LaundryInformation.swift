@@ -6,13 +6,13 @@ var serverURL = "http://localhost:5000/laundry"
 
 class LaundryInformation {
 
-    func getLaundryInformation() {
+    func getLaundryInformation() -> SwiftyJSON.JSON {
             Alamofire.request(.GET, serverURL).validate().responseJSON { response in
             switch response.result {
                 case .Success:
                     if let value = response.result.value {
                         let json = JSON(value)
-                        print("JSON: \(json)")
+                        return json
                     }
                 case .Failure(let error):
                     print(error)
