@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA5B4762DA5B79CE1E3FCC80 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D645AC1A4D18F8B77BAB9A /* Pods.framework */; };
+		EB5700DD1C07D70B00484DE1 /* FavoriteMachines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5700DB1C07D70A00484DE1 /* FavoriteMachines.xcdatamodeld */; };
+		EB5700DF1C07DB8F00484DE1 /* MachineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5700DE1C07DB8F00484DE1 /* MachineTableViewCell.swift */; };
 		EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB912FF71C06737F00E44FF7 /* AppDelegate.swift */; };
 		EB912FFD1C06737F00E44FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFB1C06737F00E44FF7 /* Main.storyboard */; };
 		EB912FFF1C06737F00E44FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB912FFE1C06737F00E44FF7 /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		7D1D47927761E59C7AA36C37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		97D645AC1A4D18F8B77BAB9A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A57DE79A9A33EE7F188589 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EB5700DC1C07D70A00484DE1 /* FavoriteMachines.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteMachines.xcdatamodel; sourceTree = "<group>"; };
+		EB5700DE1C07DB8F00484DE1 /* MachineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineTableViewCell.swift; sourceTree = "<group>"; };
 		EB912FF41C06737F00E44FF7 /* UIUC-Laundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIUC-Laundry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB912FF71C06737F00E44FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB912FFC1C06737F00E44FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				EB9130361C0679DD00E44FF7 /* LaundryInformation.swift */,
 				EB9130381C067B0500E44FF7 /* TimerViewController.swift */,
 				EB91303A1C067B2B00E44FF7 /* MachineViewController.swift */,
+				EB5700DE1C07DB8F00484DE1 /* MachineTableViewCell.swift */,
+				EB5700DB1C07D70A00484DE1 /* FavoriteMachines.xcdatamodeld */,
 				EB912FFB1C06737F00E44FF7 /* Main.storyboard */,
 				EB912FFE1C06737F00E44FF7 /* Assets.xcassets */,
 				EB9130001C06737F00E44FF7 /* LaunchScreen.storyboard */,
@@ -390,8 +396,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9130391C067B0600E44FF7 /* TimerViewController.swift in Sources */,
+				EB5700DF1C07DB8F00484DE1 /* MachineTableViewCell.swift in Sources */,
 				EB91303B1C067B2B00E44FF7 /* MachineViewController.swift in Sources */,
 				EB912FF81C06737F00E44FF7 /* AppDelegate.swift in Sources */,
+				EB5700DD1C07D70B00484DE1 /* FavoriteMachines.xcdatamodeld in Sources */,
 				EB9A84B01C0687D700620748 /* Timer.swift in Sources */,
 				EB9130371C0679DD00E44FF7 /* LaundryInformation.swift in Sources */,
 			);
@@ -659,6 +667,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB5700DB1C07D70A00484DE1 /* FavoriteMachines.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB5700DC1C07D70A00484DE1 /* FavoriteMachines.xcdatamodel */,
+			);
+			currentVersion = EB5700DC1C07D70A00484DE1 /* FavoriteMachines.xcdatamodel */;
+			path = FavoriteMachines.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB912FEC1C06737F00E44FF7 /* Project object */;
 }

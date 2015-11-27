@@ -49,7 +49,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="105" id="H9r-8r-JCM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="105" id="H9r-8r-JCM" customClass="MachineTableViewCell" customModule="UIUC_Laundry" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H9r-8r-JCM" id="sU6-dD-lau">
@@ -95,6 +95,11 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="buildingNameLabel" destination="lg9-Ir-m0G" id="uuV-70-fWA"/>
+                                            <outlet property="dryerLabel" destination="WE9-Or-Ijc" id="FhY-zY-jea"/>
+                                            <outlet property="washingMachineLabel" destination="4za-s7-Lp8" id="uyh-Fy-VO1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
