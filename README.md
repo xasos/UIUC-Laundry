@@ -15,7 +15,7 @@ Clone this repository.
 
         git clone https://github.com/xasos/UIUC-Laundry
 
-Install it's dependencies
+Install its dependencies
 
         cd UIUC-Laundry
         pod install

@@ -4,3 +4,4 @@ use_frameworks!
 
 pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire'
 pod 'SwiftyJSON', '~> 2.3.1'
+pod 'EZLoadingActivity'

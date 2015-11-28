@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 import SwiftyJSON
 import Alamofire
+import EZLoadingActivity
 
 class MachineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -13,6 +14,7 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let laundry = LaundryInformation().getLaundryInformation()
         
         Alamofire.request(.GET, "http://23.23.147.128/homes/mydata/urba7723").validate().responseJSON { response in
@@ -21,6 +23,7 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
                 if let value = response.result.value {
                     let json = JSON(value)
                     self.laundryInfo = json
+                    EZLoadingActivity.hide()
                 }
             case .Failure(let error):
                 print(error)
@@ -35,13 +38,20 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        EZLoadingActivity.show("Loading...", disableUI: true)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return laundryInfo?.count ?? 30
+        return laundryInfo.count ?? 30
+//        return 30
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: MachineTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as! MachineTableViewCell
 //        cell.buildingNameLabel?.text = "lol"
+        print(indexPath.row)
         cell.buildingNameLabel?.text = laundryInfo["location"]["rooms"][indexPath.row]["name"].stringValue
 //        cell.washingMachineLabel?.text = "nah"
         
@@ -58,8 +68,6 @@ class MachineViewController: UIViewController, UITableViewDataSource, UITableVie
                 }
             }
          }
-        
-
         
         cell.washingMachineLabel?.text = String(laundryMachineCount)
 //        cell.dryerLabel?.text = "pls"
